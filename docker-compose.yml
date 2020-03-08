@@ -7,3 +7,6 @@ services:
                 network_mode: "host"
                 labels:
                         io.balena.features.kernel-modules: '1'
+        captive-portal-refresh:
+                build: ./captive-portal-refresh
+                restart: always
